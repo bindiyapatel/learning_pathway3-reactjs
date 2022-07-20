@@ -10,12 +10,20 @@ const UsersList = () => {
   const [search, setSearch] = useState("");
   const [currentUser, setCurrentUser] = useState({});
 
-  const editRecord = (user) => {
+  const editRecord = async (id) => {
+    const user = await fetchUser(id);
     setCurrentUser(user);
   };
 
   const editData = (field, value) => {
     setCurrentUser((currentUser) => ({ ...currentUser, [field]: value }));
+  };
+
+  const fetchUser = async (id) => {
+    const res = await fetch(`http://localhost:5000/users/${id}`);
+    const data = await res.json();
+
+    return data;
   };
 
   const updateUser = async () => {

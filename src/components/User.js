@@ -43,7 +43,7 @@ const User = (props) => {
             <Button
               label="Edit"
               className="btn-primary me-2"
-              onClick={(e) => editRecord(user)}
+              onClick={(e) => editRecord(user.id)}
             />
 
             <Button
