@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 4,
+      "name": "Caterina Binotto",
+      "email": "caterina@gmail.com",
+      "role": "member"
+    },
+    {
+      "id": 5,
+      "name": "Chetan Kumar",
+      "email": "chetan@gmail.com",
+      "role": "admin"
+    },
+    {
+      "id": 6,
+      "name": "Jim McClain",
+      "email": "jim@gmail.com",
+      "role": "member"
+    },
+    {
+      "id": 7,
+      "name": "Mahaveer Singh",
+      "email": "mahaveer@gmail.com",
+      "role": "member"
+    }
+  ]
+}
